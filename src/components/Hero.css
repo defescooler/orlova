@@ -1,0 +1,128 @@
+.hero {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/vegetables.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.95;
+  z-index: 0;
+}
+
+.hero-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-bottom: var(--spacing-xs);
+  color: var(--dark-text);
+}
+
+.hero-tagline {
+  font-size: 1.125rem;
+  color: var(--mustard);
+  font-weight: 500;
+  margin-bottom: var(--spacing-md);
+  font-family: var(--font-body);
+}
+
+.hero-description {
+  font-size: 0.95rem;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.7;
+  text-align: left;
+}
+
+.hero-cta {
+  font-size: 1rem;
+  padding: 0.875rem 2rem;
+  margin-top: var(--spacing-sm);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero-container {
+    padding: var(--spacing-md);
+    margin: 0 var(--spacing-sm);
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .hero-image {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.95rem;
+  }
+
+  .hero-cta {
+    font-size: 0.95rem;
+    padding: 0.75rem 1.75rem;
+  }
+}

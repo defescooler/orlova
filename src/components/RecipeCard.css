@@ -1,0 +1,135 @@
+.recipe-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.recipe-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.recipe-card-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.recipe-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover .recipe-card-image img {
+  transform: scale(1.05);
+}
+
+.recipe-card-badges {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: white;
+  color: var(--dark-text);
+}
+
+.badge.difficulty {
+  background-color: var(--mustard);
+  color: white;
+}
+
+.badge.dish-type {
+  background-color: white;
+  color: var(--dark-text);
+}
+
+.recipe-card-content {
+  padding: var(--spacing-md);
+}
+
+.recipe-card-content h3 {
+  color: var(--dark-text);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+}
+
+.recipe-card-content p {
+  color: var(--light-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.recipe-card-meta {
+  display: flex;
+  gap: var(--spacing-sm);
+  font-size: 0.875rem;
+  color: var(--light-text);
+}
+
+@media (max-width: 768px) {
+  .recipe-card-image {
+    height: 200px;
+  }
+
+  .recipe-card-content h3 {
+    font-size: 1.125rem;
+  }
+
+  .recipe-card-content p {
+    font-size: 0.9rem;
+  }
+
+  .recipe-card-meta {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-card-image {
+    height: 180px;
+  }
+
+  .recipe-card-content {
+    padding: var(--spacing-sm);
+  }
+
+  .recipe-card-content h3 {
+    font-size: 1.0625rem;
+  }
+
+  .recipe-card-content p {
+    font-size: 0.875rem;
+  }
+
+  .recipe-card-meta {
+    font-size: 0.8rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.625rem;
+  }
+}
