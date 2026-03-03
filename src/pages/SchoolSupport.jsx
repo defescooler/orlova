@@ -1,5 +1,23 @@
 import { ClipboardList, ChefHat, GraduationCap, BarChart3, Users, BookOpen } from 'lucide-react';
+import LogoCarousel from '../components/LogoCarousel';
 import './SchoolSupport.css';
+
+const schoolLogos = [
+  { id: 'alma', name: 'Alma School', image: '/schools/almaschool.svg' },
+  { id: 'silicon', name: 'Silicon Steppe School', image: '/schools/siliconsteppe.svg' },
+  { id: 'lakeview', name: 'Lakeview School Almaty', image: '/schools/lakeview.png' },
+  { id: 'nurorda', name: 'Nurorda', image: '/schools/nurorda.png' },
+  { id: 'kemel', text: 'Kemel', className: 'logo-item--kemel' },
+  { id: 'tamos', name: 'Tamos Education', image: '/schools/tamos.svg' },
+  {
+    id: 'zerdesh',
+    title: 'Zerdesh',
+    subtitle: 'Детский сад',
+    titleClassName: 'school-name-large',
+    subtitleClassName: 'school-label',
+    className: 'logo-item--stack'
+  }
+];
 
 function SchoolSupport() {
   return (
@@ -25,6 +43,11 @@ function SchoolSupport() {
 
       <section className="service-content">
         <div className="service-container">
+          <div className="content-section schools-section schools-section--carousel">
+            <div className="schools-carousel">
+              <LogoCarousel items={schoolLogos} wrapperClassName="schools-carousel-wrapper" />
+            </div>
+          </div>
 
           <div className="content-section school-narrative-section">
             <div className="narrative-stats-row">
@@ -212,35 +235,6 @@ function SchoolSupport() {
               </div>
             </div>
             <p className="pricing-note">Все пакеты включают технологические карты с расчетом БЖУ, материалы для родителей и персонала</p>
-          </div>
-
-          <div className="content-section schools-section">
-            <h2>Школы и детские сады, внедрившие наше меню</h2>
-            <div className="schools-grid">
-              <div className="school-logo-item">
-                <img src="/schools/almaschool.svg" alt="Alma School" />
-              </div>
-              <div className="school-logo-item">
-                <img src="/schools/siliconsteppe.svg" alt="Silicon Steppe School" />
-              </div>
-              <div className="school-logo-item">
-                <img src="/schools/lakeview.png" alt="Lakeview School Almaty" />
-              </div>
-              <div className="school-logo-item">
-                <img src="/schools/nurorda.png" alt="Nurorda" />
-              </div>
-              <div className="school-logo-item">
-                <img src="/schools/kemel.png" alt="Кемел" />
-                <span className="school-label">Кемел</span>
-              </div>
-              <div className="school-logo-item">
-                <img src="/schools/tamos.svg" alt="Tamos Education" />
-              </div>
-              <div className="school-logo-item school-text-card">
-                <span className="school-name-large">Zerdesh</span>
-                <span className="school-label">Детский сад</span>
-              </div>
-            </div>
           </div>
 
           <div className="content-section contact-info-section">

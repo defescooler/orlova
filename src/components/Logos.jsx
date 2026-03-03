@@ -1,4 +1,4 @@
-import './Logos.css';
+import LogoCarousel from './LogoCarousel';
 
 const clientLogos = [
   {
@@ -41,17 +41,7 @@ const clientLogos = [
 function Logos() {
   return (
     <section className="logos clients-section">
-      <div className="logos-carousel-wrapper">
-        <div className="logos-carousel">
-          <div className="logos-track">
-            {[...clientLogos, ...clientLogos].map((logo, index) => (
-              <div key={`${logo.id}-${index}`} className="logo-item">
-                <img src={logo.image} alt={logo.name} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <LogoCarousel items={clientLogos} />
     </section>
   );
 }
