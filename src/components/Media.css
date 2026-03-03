@@ -139,9 +139,14 @@
 }
 
 @media (max-width: 480px) {
+  .media {
+    padding: var(--spacing-md) 0;
+  }
+
   .media-wrapper {
     padding: var(--spacing-sm);
-    margin: 0 var(--spacing-xs);
+    margin: 0;
+    border-radius: 0;
   }
 
   .media-header h2 {
@@ -157,11 +162,13 @@
   }
 
   .instagram-post {
-    height: 460px;
+    height: 520px;
   }
 
   .view-more-btn {
     font-size: 0.9rem;
-    padding: 0.625rem 1.5rem;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    text-align: center;
   }
 }

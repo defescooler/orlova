@@ -202,6 +202,7 @@
 
   .logos-track {
     gap: 2rem;
+    animation-duration: 18s;
   }
 
   .logo-item {
@@ -236,6 +237,7 @@
 
   .logos-track {
     gap: 1.5rem;
+    animation-duration: 13s;
   }
 
   .logo-item {

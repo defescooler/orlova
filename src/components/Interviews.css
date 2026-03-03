@@ -118,13 +118,17 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .interviews h2 {
     font-size: 1.75rem;
   }
 
   .interviews-intro {
     font-size: 0.9375rem;
+  }
+
+  .interviews-container {
+    padding: 0 var(--spacing-xs);
   }
 }
 
@@ -205,6 +209,7 @@
 
   .media-track {
     gap: var(--spacing-lg);
+    animation-duration: 22s;
   }
 
   .media-logo-item {
@@ -218,13 +223,14 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .media-features h3 {
     font-size: 1.25rem;
   }
 
   .media-track {
     gap: var(--spacing-md);
+    animation-duration: 17s;
   }
 
   .media-logo-item {
