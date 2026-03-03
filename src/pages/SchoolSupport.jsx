@@ -1,3 +1,4 @@
+import { ClipboardList, ChefHat, GraduationCap, BarChart3, Users, BookOpen } from 'lucide-react';
 import './SchoolSupport.css';
 
 function SchoolSupport() {
@@ -24,94 +25,132 @@ function SchoolSupport() {
 
       <section className="service-content">
         <div className="service-container">
-          <div className="content-section intro-section">
-            <div className="intro-header">
-              <h2>Альмира Орлова</h2>
-              <p className="credentials">Дипломированный нутрициолог • Стаж 12 лет</p>
+
+          <div className="content-section school-narrative-section">
+            <div className="narrative-stats-row">
+              <div className="narrative-stat">
+                <span className="narrative-stat-num">1 из 5</span>
+                <span className="narrative-stat-label">детей в Казахстане имеет избыточный вес или ожирение</span>
+                <a href="https://doi.org/10.1002/osp4.70024" target="_blank" rel="noopener noreferrer" className="stat-source-link">
+                  <span className="stat-source-text">
+                    Abdrakhmanova et al. · Obesity Science &amp; Practice, 2024
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </span>
+                  <span className="stat-source-logos">
+                    <img src="/media/logo-1-150x150.png" alt="НЦОЗ РК" className="stat-source-logo" />
+                    <img src="/media/World_Health_Organization_Logo.svg.png" alt="ВОЗ" className="stat-source-logo" />
+                  </span>
+                </a>
+              </div>
+              <div className="narrative-stat">
+                <span className="narrative-stat-num">5 400+</span>
+                <span className="narrative-stat-label">детей и подростков живут с диабетом 1-го типа в Казахстане</span>
+                <a href="https://doi.org/10.29333/ejgm/13663" target="_blank" rel="noopener noreferrer" className="stat-source-link">
+                  <span className="stat-source-text">
+                    Galiyeva et al. · EJGM, 2023
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </span>
+                  <span className="stat-source-logos">
+                    <img src="/media/NU_horizontal_1.png" alt="Nazarbayev University" className="stat-source-logo stat-source-logo--lg" />
+                  </span>
+                </a>
+              </div>
+              <div className="narrative-stat">
+                <span className="narrative-stat-num">×3,5</span>
+                <span className="narrative-stat-label">за 7 лет выросла распространённость СД1 среди детей (2014–2021)</span>
+                <a href="https://doi.org/10.29333/ejgm/13663" target="_blank" rel="noopener noreferrer" className="stat-source-link">
+                  <span className="stat-source-text">
+                    Galiyeva et al. · EJGM, 2023
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </span>
+                  <span className="stat-source-logos">
+                    <img src="/media/NU_horizontal_1.png" alt="Nazarbayev University" className="stat-source-logo stat-source-logo--lg" />
+                  </span>
+                </a>
+              </div>
             </div>
-            <p>
-              Здравствуйте! Спасибо огромное за интерес к здоровому питанию и готовность улучшить рацион в Вашем учреждении.
+
+            <div className="narrative-body">
+              <p>Каждый пятый ребёнок в Казахстане уже сегодня имеет избыточный вес или ожирение. Параллельно растёт число детей с диабетом — болезнью, которая ещё недавно считалась взрослой.</p>
+              <p>Школьная столовая с больным питанием — это не только еда. Это привычки на всю жизнь: есть быстро, невкусно, неправильно. Именно это ребёнок заберёт во взрослую жизнь.</p>
+              <p>В Казахстане не хватает педиатров, хороших поваров, детских нутрициологов. Во многих школах нет диетсестёр, а контроль питания существует только на бумаге. Продукты дорожают, и биться за себестоимость становится всё сложнее.</p>
+            </div>
+
+          </div>
+
+          <div className="school-transition">
+            <p className="school-transition-text">
+              Я знаю эту систему изнутри — с её бюджетными ограничениями, нехваткой персонала и инертностью. И знаю, как в ней всё-таки сделать нормальное детское питание. Именно поэтому я работаю со школами и садами уже 10 лет.
             </p>
-            <p>
-              Здоровье человека на 80% зависит от питания. Поскольку 70% съедаемой пищи приходится на питание в школе или детском саду, утвержденный рацион заведения определяет продолжительность и качество жизни детей.
+            <p className="school-transition-sub">
+              Вот как это выглядит на практике.
             </p>
           </div>
 
-          <div className="content-section highlight-section">
-            <h2>Почему это важно?</h2>
-            <div className="benefits-grid">
-              <div className="benefit-card">
-                <h3>Улучшение успеваемости</h3>
-                <p>Сокращение простых углеводов позволяет снизить скачки сахара в крови, улучшить внимание и усидчивость детей</p>
+          <div className="content-section instagram-grid-section">
+            <div className="school-instagram-grid">
+              <div className="school-instagram-post">
+                <iframe
+                  src="https://www.instagram.com/p/DUiBDXMDLpr/embed/"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency={true}
+                  title="Пост 1"
+                ></iframe>
               </div>
-              <div className="benefit-card">
-                <h3>Укрепление иммунитета</h3>
-                <p>Правильное питание повышает иммунный ответ на вирусную и бактериальную нагрузку</p>
+              <div className="school-instagram-post">
+                <iframe
+                  src="https://www.instagram.com/p/DUiE3z6jLZM/embed/"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency={true}
+                  title="Пост 2"
+                ></iframe>
               </div>
-              <div className="benefit-card">
-                <h3>Улучшение пищеварения</h3>
-                <p>Исключение жирной переработанной еды и увеличение цельных продуктов улучшает работу всех систем организма</p>
-              </div>
-              <div className="benefit-card">
-                <h3>Рост популярности</h3>
-                <p>Популярность детских садов и школ со здоровым питанием растет с невероятной скоростью</p>
+              <div className="school-instagram-post">
+                <iframe
+                  src="https://www.instagram.com/p/DUUcv1-DJaC/embed/"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency={true}
+                  title="Пост 3"
+                ></iframe>
               </div>
             </div>
-            <p className="important-note">
-              Всемирная организация здравоохранения настоятельно рекомендует сокращать потребление сахара, увеличивать в рационе цельные продукты, источники клетчатки и потребление воды.
-            </p>
           </div>
 
           <div className="content-section">
             <h2>Что входит в программу</h2>
             <div className="services-grid">
               <div className="service-card">
-                <div className="icon">📋</div>
+                <div className="icon"><ClipboardList size={36} strokeWidth={1.5} /></div>
                 <h3>Аудит меню</h3>
                 <p>Анализ текущего меню на соответствие нормам питания, выявление дефицитов и избытков</p>
               </div>
               <div className="service-card">
-                <div className="icon">🍽️</div>
+                <div className="icon"><ChefHat size={36} strokeWidth={1.5} /></div>
                 <h3>Разработка меню</h3>
                 <p>Создание сбалансированного меню с учётом возраста детей, сезонности и бюджета</p>
               </div>
               <div className="service-card">
-                <div className="icon">👨‍🍳</div>
+                <div className="icon"><GraduationCap size={36} strokeWidth={1.5} /></div>
                 <h3>Обучение персонала</h3>
                 <p>Тренинги для поваров и воспитателей по принципам здорового питания</p>
               </div>
               <div className="service-card">
-                <div className="icon">📊</div>
+                <div className="icon"><BarChart3 size={36} strokeWidth={1.5} /></div>
                 <h3>Мониторинг</h3>
                 <p>Регулярная оценка внедрения программы и корректировка по необходимости</p>
               </div>
               <div className="service-card">
-                <div className="icon">👪</div>
+                <div className="icon"><Users size={36} strokeWidth={1.5} /></div>
                 <h3>Работа с родителями</h3>
                 <p>Лекции и материалы для родителей о питании детей</p>
               </div>
               <div className="service-card">
-                <div className="icon">📚</div>
+                <div className="icon"><BookOpen size={36} strokeWidth={1.5} /></div>
                 <h3>Образовательные материалы</h3>
-                <p>Разработка материалов для детей о здоровом питании</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="content-section highlight-section">
-            <h2>Для кого</h2>
-            <div className="audience-grid">
-              <div className="audience-card">
-                <h3>Частные детские сады</h3>
-                <p>Хотите выделиться качественным питанием и привлечь осознанных родителей</p>
-              </div>
-              <div className="audience-card">
-                <h3>Школы</h3>
-                <p>Нужно улучшить систему питания и повысить удовлетворённость учеников</p>
-              </div>
-              <div className="audience-card">
-                <h3>Образовательные центры</h3>
-                <p>Ищете комплексный подход к здоровью и питанию детей</p>
+                <p>Урок «Час здоровья» для детей, инструкция для персонала, оформление столовой</p>
               </div>
             </div>
           </div>
@@ -155,16 +194,6 @@ function SchoolSupport() {
             </div>
           </div>
 
-          <div className="content-section additional-materials">
-            <h2>Дополнительные материалы</h2>
-            <ul className="materials-list">
-              <li>Урок «Час здоровья» для детей</li>
-              <li>Инструкция для персонала</li>
-              <li>Оформление столовой</li>
-              <li>Меню и методичка для родителей</li>
-            </ul>
-          </div>
-
           <div className="pricing-section">
             <h2>Тарифы</h2>
             <div className="pricing-grid">
@@ -195,19 +224,21 @@ function SchoolSupport() {
                 <img src="/schools/siliconsteppe.svg" alt="Silicon Steppe School" />
               </div>
               <div className="school-logo-item">
-                <img src="/schools/lakeview.png" alt="Lakeview School" />
+                <img src="/schools/lakeview.png" alt="Lakeview School Almaty" />
               </div>
               <div className="school-logo-item">
                 <img src="/schools/nurorda.png" alt="Nurorda" />
               </div>
               <div className="school-logo-item">
-                <img src="/schools/kemel.png" alt="Kemel" />
+                <img src="/schools/kemel.png" alt="Кемел" />
+                <span className="school-label">Кемел</span>
               </div>
               <div className="school-logo-item">
                 <img src="/schools/tamos.svg" alt="Tamos Education" />
               </div>
-              <div className="school-logo-item">
-                <img src="/schools/zerdesh.jpeg" alt="Zerdesh" />
+              <div className="school-logo-item school-text-card">
+                <span className="school-name-large">Zerdesh</span>
+                <span className="school-label">Детский сад</span>
               </div>
             </div>
           </div>
@@ -227,31 +258,6 @@ function SchoolSupport() {
             </div>
           </div>
 
-          <div className="content-section faq-section">
-            <h2>Частые вопросы</h2>
-            <div className="faq-list">
-              <div className="faq-item">
-                <h3>Сколько стоит программа?</h3>
-                <p>Стоимость зависит от масштаба учреждения и объёма работ. Свяжитесь со мной для индивидуального расчёта.</p>
-              </div>
-              <div className="faq-item">
-                <h3>Как долго внедряется программа?</h3>
-                <p>От первой встречи до полного внедрения обычно проходит 2-3 месяца. Поддержка может быть долгосрочной.</p>
-              </div>
-              <div className="faq-item">
-                <h3>Работаете ли вы с государственными учреждениями?</h3>
-                <p>Да, у меня есть опыт работы как с частными, так и с государственными образовательными учреждениями.</p>
-              </div>
-              <div className="faq-item">
-                <h3>Нужны ли дополнительные инвестиции в оборудование?</h3>
-                <p>Обычно работаем с имеющимся оборудованием. Если нужны изменения, обсуждаем это на этапе диагностики.</p>
-              </div>
-              <div className="faq-item">
-                <h3>Можете ли вы помочь с сертификацией?</h3>
-                <p>Да, помогаю с подготовкой документации и прохождением проверок контролирующих органов.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </div>

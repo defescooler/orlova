@@ -1,3 +1,4 @@
+import { Brain, Zap, Droplets } from 'lucide-react';
 import './IndividualConsultations.css';
 
 function IndividualConsultations() {
@@ -23,21 +24,25 @@ function IndividualConsultations() {
           <div className="about-with-review-section">
             <div className="about-content">
               <h2>Почему это важно?</h2>
-              <p>
-                <strong>Здоровье человека на 80% зависит от питания.</strong> Это значит, что выбор, например, в пользу омлета с цветной капустой вместо рисовой или манной каши на завтрак, может помочь вам и вашим детям прожить более долгую и здоровую жизнь, а также реализовать свой потенциал. Представляете!
-              </p>
-              <p>
-                Снижение количества простых углеводов в рационе позволяет избежать резких скачков сахара в крови, что улучшает внимание, усидчивость и, в конечном итоге, укрепляет здоровье.
-              </p>
-              <p>
-                Исключение жирной и переработанной пищи, а также увеличение доли цельных продуктов улучшает пищеварение, повышает иммунитет и уровень энергии.
-              </p>
-              <p>
-                Всемирная организация здравоохранения настоятельно рекомендует сократить потребление сахара, увеличить количество клетчатки в рационе и пить больше воды, избегать напитков, содержащих кофеин, цельное молоко и сахар.
-              </p>
-              <p>
-                Я с удовольствием помогу вам разработать новый режим питания и предложу вкусные, доступные рецепты, которые легко приготовить!
-              </p>
+              <div className="stat-highlight">
+                <span className="stat-number">80%</span>
+                <span className="stat-text">здоровья зависит от питания — а значит, выбор еды важнее, чем кажется</span>
+              </div>
+              <div className="insights-list">
+                <div className="insight-item">
+                  <span className="insight-icon"><Brain size={22} strokeWidth={1.5} /></span>
+                  <p>Меньше простых углеводов — меньше скачков сахара, лучше внимание и усидчивость</p>
+                </div>
+                <div className="insight-item">
+                  <span className="insight-icon"><Zap size={22} strokeWidth={1.5} /></span>
+                  <p>Цельные продукты вместо переработанных — крепче иммунитет, больше энергии</p>
+                </div>
+                <div className="insight-item">
+                  <span className="insight-icon"><Droplets size={22} strokeWidth={1.5} /></span>
+                  <p>ВОЗ рекомендует: больше клетчатки и воды, меньше сахара и кофеина</p>
+                </div>
+              </div>
+              <p className="about-cta-note">Я помогу составить рацион, который подходит именно вам — с вкусными и доступными рецептами.</p>
             </div>
             <div className="review-video-side">
               <video
@@ -49,7 +54,7 @@ function IndividualConsultations() {
                 Ваш браузер не поддерживает видео.
               </video>
               <p className="review-caption">
-                Жасмин из Лондона, которая прошла курс консультаций улучшив свое питание
+                Жасмин из Лондона, которая прошла курс консультаций улучшив своё питание
               </p>
             </div>
           </div>
@@ -64,28 +69,6 @@ function IndividualConsultations() {
               <li>Продуктовая корзина</li>
               <li>Поддержка по WhatsApp</li>
             </ul>
-          </div>
-
-          <div className="content-section highlight-section">
-            <h2>Кому подойдёт</h2>
-            <div className="cards-grid">
-              <div className="info-card">
-                <h3>Женщинам</h3>
-                <p>Которые хотят наладить питание, улучшить самочувствие и энергию</p>
-              </div>
-              <div className="info-card">
-                <h3>Семьям</h3>
-                <p>Которые ищут баланс между вкусной и полезной едой для всех</p>
-              </div>
-              <div className="info-card">
-                <h3>Мамам</h3>
-                <p>Которые хотят организовать здоровое питание для детей без стресса</p>
-              </div>
-              <div className="info-card">
-                <h3>Тем, кто устал от диет</h3>
-                <p>И хочет найти устойчивый подход к питанию</p>
-              </div>
-            </div>
           </div>
 
           <div className="content-section">
@@ -116,38 +99,17 @@ function IndividualConsultations() {
 
           <div className="results-section">
             <h2>Результаты клиентов</h2>
-            <div className="results-grid">
-              <div className="result-placeholder">
-                <div className="placeholder-box">
-                  <span>📊 До и после: показатели здоровья</span>
-                </div>
-              </div>
-              <div className="result-placeholder">
-                <div className="placeholder-box">
-                  <span>💬 Отзывы клиентов</span>
-                </div>
-              </div>
-              <div className="result-placeholder">
-                <div className="placeholder-box">
-                  <span>📈 Примеры планов питания</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="content-section">
-            <h2>Записаться на консультацию</h2>
-            <p className="booking-description">
-              Выберите удобное время для консультации. После записи я свяжусь с вами для подтверждения и отправлю анкету для заполнения.
-            </p>
-            <div className="calendly-container">
-              <iframe
-                src="https://calendly.com/your-calendly-link"
-                width="100%"
-                height="700"
-                frameBorder="0"
-                title="Запись на консультацию"
-              ></iframe>
+            <div className="reviews-images-grid">
+              <img src="/reviews/rev1.png" alt="Отзыв клиента" />
+              <img src="/reviews/rev2.png" alt="Отзыв клиента" />
+              <img src="/reviews/rev3.png" alt="Отзыв клиента" />
+              <img src="/reviews/rev4.png" alt="Отзыв клиента" />
+              <img src="/reviews/rev5.png" alt="Отзыв клиента" />
+              <img src="/reviews/rev6.png" alt="Отзыв клиента" />
+              <img src="/reviews/rev7.png" alt="Отзыв клиента" />
+              <img src="/reviews/rev8.png" alt="Отзыв клиента" />
+              <img src="/reviews/rev9.png" alt="Отзыв клиента" />
+              <img src="/reviews/rev10.png" alt="Отзыв клиента" />
             </div>
           </div>
 

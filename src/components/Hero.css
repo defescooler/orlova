@@ -77,6 +77,26 @@
   margin-top: var(--spacing-sm);
 }
 
+.ragout-link {
+  color: #1e40af;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.ragout-link:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.ragout-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 1px;
+  flex-shrink: 0;
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: var(--spacing-lg) 0;
